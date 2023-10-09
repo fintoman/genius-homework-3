@@ -75,9 +75,11 @@ a {
       rgba(255, 255, 255, 0.19) 58.65%,
       rgba(255, 255, 255, 0) 72.78%
     ),
-    url(../images/image\ 1.png);
+    url(../images/mainfon.png);
   background-repeat: no-repeat;
+
   background-position: top right;
+
   /* background-attachment: fixed; */
 }
 
@@ -102,7 +104,7 @@ a {
 }
 
 .link {
-  color: var(--color-primary-blue);
+  color: black;
   font-family: 'Roboto';
   font-size: 18px;
   font-style: normal;
@@ -112,11 +114,11 @@ a {
 }
 
 .link:hover {
-  color: var(--color-primary-dblue);
-  font-family: Roboto;
+  color: var(--color-primary-blue);
+  font-family: 'Roboto';
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
 }
 
@@ -146,13 +148,13 @@ h1 {
   color: #ffffff;
   border-radius: 32px;
   background-color: var(--color-primary-blue);
-  border: var(--color-primary-blue);
   display: inline-flex;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
   cursor: pointer;
   margin-bottom: 14px;
+  border: 2px solid #2b7fff;
 }
 
 .button:hover {
@@ -347,6 +349,7 @@ footer {
   gap: 186px;
   margin: 56px 100px 56px 100px;
   position: relative;
+  line-height: 26px;
 }
 
 .socpac {
