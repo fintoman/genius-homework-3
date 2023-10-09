@@ -164,9 +164,7 @@ h1 {
 }
 
 .button:hover {
-  display: inline-flex;
   padding: 16px 32px;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 32px;
   border: 2px solid #2b7fff;
@@ -370,13 +368,17 @@ h3 .hero-h3 {
 .text-cont {
   color: #ffffff;
 }
-
 .modal2 {
-  max-width: 423px;
-  max-width: 481px;
+  width: 100%;
+  height: 100%;
+  max-width: 420px;
+  max-height: 480px;
   background-color: var(--color-primary-dblue);
   background-image: url(/images/bkgmodal.png);
   border-radius: 48px;
+  padding: 24px 36px;
+  position: relative;
+  overflow-у: auto;
 }
 
 /* footer */
@@ -467,12 +469,13 @@ footer {
   width: 100%;
   height: 100%;
   max-width: 720px;
-  max-height: 680px;
+  max-height: 500px;
   background-color: var(--color-primary-dblue);
   background-image: url(/images/bkgmodal.png);
   border-radius: 48px;
+  padding: 100px 42px;
   position: relative;
-  overflow-y: auto;
+  overflow-у: auto;
 }
 
 .modal-btn-close {
@@ -495,7 +498,7 @@ footer {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: -50px;
 }
 .opus {
   color: #fff;
@@ -519,17 +522,19 @@ footer {
 /* Form */
 
 .form-field {
-  display: flex;
-  margin-bottom: 24px;
-  justify-content: center;
+  display: block;
+  max-width: 310px;
+  max-height: 320px;
+  margin: 24px auto;
 }
 .form-label {
   display: block;
 }
 
 .form-input {
-  width: 310px;
-  height: 52px;
+  display: block;
+  width: 100%;
+  padding: 18px 32px;
   border-radius: 32px;
   border: 2px solid var(--color-secondary-gr2);
   background-color: transparent;
@@ -568,21 +573,11 @@ footer {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.5;
   text-decoration-line: underline;
 }
 
 .form-button {
-  color: #ffffff;
-  border-radius: 32px;
-  background-color: var(--color-primary-blue);
-  padding: 16px 32px;
-  /* align-items: flex-start; */
-  gap: 10px;
-  cursor: pointer;
-  margin-bottom: 14px;
-  border: 2px solid #2b7fff;
-  transition-property: color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  margin: 0 auto;
+  display: block;
 }
